@@ -1,5 +1,0 @@
-type Ingredient {
-    id: Int!
-    name: String!
-    calories: String
-}

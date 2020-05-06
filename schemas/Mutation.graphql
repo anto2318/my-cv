@@ -1,3 +1,0 @@
-type Mutation {
-    createPizzas (pizzas: [PizzaInput]): [Pizza]
-}

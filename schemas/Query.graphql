@@ -1,4 +1,0 @@
-type Query {
-    pizzas (name: [String]): [Pizza]
-    ingredients: [Ingredient]
-}
