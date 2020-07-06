@@ -74,7 +74,26 @@
 </head> 
 
 <body>
-    
+    <div id="player"></div>
+    <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'suv_On3Q3Pg',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+	</script>
+	
     <header class="header text-center">	    
 		<div class="force-overflow">
 			<h1 class="blog-name pt-lg-4 mb-0"><a href="../../index.html">Antonio Nardi</a></h1>
@@ -155,163 +174,94 @@
 	    <article class="blog-post px-3 py-5 p-md-5">
 		    <div class="container single-col-max-width">
 			    <header class="blog-post-header">
-				    <h2 class="title mb-2">Why Every Developer Should Have A Blog</h2>
-				    <div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#">4 comments</a></span></div>
+				    <h2 class="title mb-2">About Ransomware Virus</h2>
+				    <div class="meta mb-3"><span class="date">May 25, 2017</span></div>
 			    </header>
 			    
 			    <div class="blog-post-body">
-				    <figure class="blog-banner">
-				        <a href="https://made4dev.com/"><img class="img-fluid" src="./ransomware_files/blog-post-banner.jpg" alt="image"></a>
-				        <figcaption class="mt-2 text-center image-caption">Image Credit: <a href="https://made4dev.com/?ref=devblog" target="_blank">made4dev.com (Premium Programming T-shirts)</a></figcaption>
+				    <figure class="blog-banner" style="text-align: center;">
+				        <img class="img-fluid" src="../../assets/images/ransomware.png" alt="image">
+				        <figcaption class="mt-2 text-center image-caption">Credit: BeeBright / <a href="https://shutterstock.com" target="_blank">Shutterstock.com</a></figcaption>
 				    </figure>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+				    <p>
+						The investigation carried out by a consortium of security companies, who have spent several years investigating Lázaro's activities, associate the group with a hacktivist profile 
+						(hackers attacking entities that ethics have been questioned) but curiously after Investigations have ensured that more than 60% of the malware related to the Lazarus it has analyzed 
+						contains the texts in Korean, placing on the track the political motivations between South Korea and the United States.
+					</p>
 				    
-				    <h3 class="mt-5 mb-3">Code Block Example</h3>
-				    <p>You can get more info at <a href="https://highlightjs.org/" target="_blank">https://highlightjs.org/</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    <pre>					    <code class="hljs javascript">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span>(<span class="hljs-params">block, cls</span>) </span>{
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">if</span> (cls.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != <span class="hljs-number">-1</span>)
-      <span class="hljs-keyword">return</span> process(block, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) +
-             <span class="hljs-string">` class="<span class="hljs-subst">${cls}</span>"`</span>;
-  } <span class="hljs-keyword">catch</span> (e) {
-    <span class="hljs-comment">/* handle exception */</span>
-  }
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) {
-    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
-      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'undefined'</span>);
-  }
-}
-
-<span class="hljs-keyword">export</span>  $initHighlight;
-					    </code>
-				    </pre>
-				    <h3 class="mt-5 mb-3">Typography</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				    <h5 class="my-3">Bullet Points:</h5>
-				    <ul class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ul>
-					<ol class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ol>
-					<h5 class="my-3">Quote Example:</h5>
-					<blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
-						<p class="mb-2">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
-						<footer class="blockquote-footer">John Romero</footer>
-					</blockquote>
+				    <h5 class="mt-5 mb-3">What happened?</h5>
+				    <p>
+						May 12, 2017, a global cyberattack with the WannaCry virus was generated, leaving about 200,000 victims in less than 150 countries. This virus WannaCry is a piece of software that 
+						hijacks the files of a computer and then request its rescue to the users a change of a sum of money. Several companies, hospitals and other governmental entities have partially 
+						or totally paralyzed their operations after being infected.
+					</p>
+					<figure class="blog-banner" style="text-align: center;">
+				        <img class="img-fluid" src="./assets/images/map.png" alt="image">
+				        <figcaption class="mt-2 text-center image-caption">Map that has circulated in social networks where some countries that were affected. (Twitter)</figcaption>
+				    </figure>
+				    <h5 class="mt-5 mb-3">What is a ransomware virus?</h5>
+				    <p>It is a malicious module whose main function is to encrypt the files of our Windows system with strong cryptography.</p>
+					<h5 class="mt-5 mb-3">Asymmetric Cryptography</h4>
+				    <p>
+						Also called public key cryptography is a cryptographic method that uses a key pair for sending messages. Both keys belong to the same person who sent the message. Cryptographic methods ensure 
+						that this pair of keys can only be generated once, so it can be assumed that it is not possible for two people to have casually obtained the same pair of keys.
+						If the sender uses the public key of the recipient to encrypt the message, once encrypted, only the private key of the recipient can decrypt this message, since it is the only one that knows it. 
+						Therefore the confidentiality of sending the message is achieved, no one but the recipient can decipher it.
+						If the owner of the key pair uses their private key to encrypt the message, anyone can decrypt it using their public key. In this case it is possible to identify and authenticate the sender, 
+						since it is known that he could only have used his private key (unless someone had been able to steal it). This idea is the foundation of electronic signatures.
+					</p>
+					<figure class="blog-banner" style="text-align: center;">
+				        <img class="img-fluid" src="./assets/images/moneythief.png" alt="image">
+				    </figure>
+					<h5 class="mt-5 mb-3">How important is this process to be done with strong cryptography?</h5>
+				    <p>This allows that if you don't have the (private) decryption key, it is not possible by any other means recover the original files.</p>
+					<h5 class="mt-5 mb-3">What does the cybercriminal need to be able to attack?</h5>
+					<p>Social engineering, get a list of contacts to attack and hire a service that sends malicious mail.</p>
+					<h5 class="mt-5 mb-3">How infection occurs?</h5>
+					<p>Usually occurs when receiving by e-mail or other digital means, an encrypted program, pretending to be something else, that when executed decrypts the harmful code and encrypts our files.</p>
 					
-					<h5 class="my-3">Table Example:</h5>
-					<table class="table table-striped my-5">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<h5 class="mb-3">Embed A Tweet:</h5>
-					
-					<div class="twitter-tweet twitter-tweet-rendered" style="display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 550px; height: 317px; display: block; flex-grow: 1;" title="Twitter Tweet" src="./ransomware_files/index.html" data-tweet-id="926458505355235328"></iframe></div>
-<script async="" src="./ransomware_files/widgets.js" charset="utf-8"></script>
-
-
-				    
-				    <h3 class="mt-5 mb-3">Video Example</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-
+					<h5 class="mt-5 mb-3">How are these viruses transmitted?</h5>
+					<p>
+						These viruses search through the network for all available drives and encrypt all files of certain types (documents, spreadsheets, databases, etc.) ensuring that the system remains in operation, although they 
+						sometimes leave it locked with the infection notification screen.
+					</p>
+					<h5 class="mt-5 mb-3">What do the creators of the virus ask for?</h5>
+					<p>
+						They ask for a payment in bitcoins, that being a digital currency is very difficult to trace. The funny thing is that this time it has demanded the payment of 300 $ for the equipment and if this payment is delayed 
+						3 days more, they raise the price of rescue.
+					</p>
+					<h5 class="mt-5 mb-3">Why it happened?</h5>
+					<p>The attack takes advantage of a security vulnerability documented by Microsoft in MS17-010, released March 17, 2017. This vulnerability affects computers that do not have the latest security updates.</p>
+					<h5 class="mt-5 mb-3">How did it happen?</h5>
+					<p>The infection started with an email (phishing).</p>
+					<h5 class="mt-5 mb-3">"The anonymous hero"</h5>
+					<p>This is called the British cybersecurity researcher Marcus Hutchins, 22, who has managed to stop the threat of WannaCry.</p>
+					<figure class="blog-banner" style="text-align: center;">
+						<img class="img-fluid" src="./assets/images/hero.png" alt="image">
+						<figcaption class="mt-2 text-center image-caption">Marcus Hutchins was branded a hero for slowing the WannaCry ransomware. Credit: AP: Interview: Expert who beat cyberattack says he's no hero</figcaption>
+				    </figure>
+					<h5 class="mt-5 mb-3">How did the attack stop?</h5>
+					<p>
+						Although it was not possible to stop the infection altogether, the attack stopped. With the help of Darien Huss, from Proofpoint, they have found a "red switch" (kill switch) on the ransomware that stops it. 
+						This is an unregistered web address to which the malware made a request to this <a href="http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com" target="_blank">http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</a>. Therefore, if WannaCry does not get response from that web, it expands. 
+						If activated, it stops. In this way, Marcus bought a domain that was free and redirected the traffic that generated the virus to a server hosted in Los Angeles.
+					</p>
+					<h5 class="mt-5 mb-3">Lazarus probably provoked the WannaCry cyber attack</h5>
+					<p>
+						The international corporation that develops computer software, Symantec, estimated that ransomware presented several characteristics to the attack by Lazarus against Sony Pictures in 2014. Without evoking alleged links between the group 
+						and North Korea, Symantec explained that an earlier version of WannaCry was used in a small number of attacks three months before the global cyber attack.
+					</p>
+					<p>In response to this Pyongyang denied any relation to this massive computer attack that infected hundreds of thousands of computers in the world.</p>
+					<h4 class="mt-5 mb-3">Creating a Ransomware with Python</h4><br>
 				    <div class="embed-responsive embed-responsive-16by9">
-					   <iframe width="560" height="315" src="./ransomware_files/hnCmSXCZEpU.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>					
+						<iframe id="player" type="text/html" width="640" height="360"
+						src="http://www.youtube.com/embed/suv_On3Q3Pg?enablejsapi=1&origin=http://example.com"
+						frameborder="0"></iframe>
 					</div>
-				   
 			    </div>
-				    
-			    <nav class="blog-nav nav nav-justified my-5">
-				  <a class="nav-link-prev nav-item nav-link rounded-left" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/index.html">Previous<svg class="svg-inline--fa fa-long-arrow-alt-left fa-w-14 arrow-prev" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg><!-- <i class="arrow-prev fas fa-long-arrow-alt-left"></i> --></a>
-				  <a class="nav-link-next nav-item nav-link rounded-right" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-list.html">Next<svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14 arrow-next" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg><!-- <i class="arrow-next fas fa-long-arrow-alt-right"></i> --></a>
-				</nav>
 				
-				<div class="blog-comments-section">
-					<div id="disqus_thread"><iframe id="dsq-app7187" name="dsq-app7187" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./ransomware_files/saved_resource.html" horizontalscrolling="no" verticalscrolling="no" style="height: 459px !important;"></iframe></div>
-					<script>
-					    /**
-					     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-					     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-					     *  PLATFORM OR CMS.
-					     *  
-					     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-					     *  https://disqus.com/admin/universalcode/#configuration-variables
-					     */
-					    /*
-					    var disqus_config = function () {
-					        // Replace PAGE_URL with your page's canonical URL variable
-					        this.page.url = PAGE_URL;  
-					        
-					        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-					        this.page.identifier = PAGE_IDENTIFIER; 
-					    };
-					    */
-					    
-					    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-					        var d = document, s = d.createElement('script');
-					        
-					        // IMPORTANT: Replace 3wmthemes with your forum shortname!
-					        s.src = 'https://3wmthemes.disqus.com/embed.js';
-					        
-					        s.setAttribute('data-timestamp', +new Date());
-					        (d.head || d.body).appendChild(s);
-					    })();
-					</script>
-					<noscript>
-					    Please enable JavaScript to view the 
-					    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-					        comments powered by Disqus.
-					    </a>
-					</noscript>
-				</div><!--//blog-comments-section-->
-				
-		    </div><!--//container-->
-	    </article>
-	    
-	    <section class="promo-section theme-bg-light py-5 text-center">
-		    <div class="container single-col-max-width">
-			    <h2 class="title">Promo Section Heading</h2>
-			    <p>You can use this section to promote your side projects etc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                <figure class="promo-figure">
-			        <a href="https://made4dev.com/" target="_blank"><img class="img-fluid" src="./ransomware_files/promo-banner.jpg" alt="image"></a>
-			    </figure>
-		    </div><!--//container-->
-	    </section><!--//promo-section-->
-	    
-	     <footer class="footer text-center py-4">
-			<small class="copyright">Template Copyright © <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+		<footer class="footer text-center py-4">
+			<small class="copyright">Copyright © Antonio Nardi 2020</small>
 		</footer>
     
     </div><!--//main-wrapper-->
@@ -323,27 +273,25 @@
 			<a id="config-trigger" class="config-trigger config-panel-hide text-center" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"><svg class="svg-inline--fa fa-cog fa-w-16 mx-auto" data-fa-transform="down-6" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.875em;"><g transform="translate(256 256)"><g transform="translate(0, 192)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" transform="translate(-256 -256)"></path></g></g></svg><!-- <i class="fas fa-cog mx-auto" data-fa-transform="down-6"></i> --></a>
 			<h5 class="panel-title">Choose Colour</h5>
 			<ul id="color-options" class="list-inline mb-0">
-				<li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-9  list-inline-item"><a data-style="assets/css/theme-9.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
-				<li class="theme-10  list-inline-item"><a data-style="assets/css/theme-10.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-1 active list-inline-item"><a data-style="../../assets/css/theme-1.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-2  list-inline-item"><a data-style="../../assets/css/theme-2.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-3  list-inline-item"><a data-style="../../assets/css/theme-3.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-4  list-inline-item"><a data-style="../../assets/css/theme-4.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-5  list-inline-item"><a data-style="../../assets/css/theme-5.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-6  list-inline-item"><a data-style="../../assets/css/theme-6.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-7  list-inline-item"><a data-style="../../assets/css/theme-7.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-8  list-inline-item"><a data-style="../../assets/css/theme-8.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-9  list-inline-item"><a data-style="../../assets/css/theme-9.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
+				<li class="theme-10  list-inline-item"><a data-style="../../assets/css/theme-10.css" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"></a></li>
 			</ul>
 			<a id="config-close" class="close" href="https://themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html#"><svg class="svg-inline--fa fa-times-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg><!-- <i class="fa fa-times-circle"></i> --></a>
 		</div><!--//panel-inner-->
 	</div><!--//configure-panel-->
 
-    
-       
     <!-- Javascript -->          
-    <script src="./ransomware_files/jquery-3.4.1.min.js"></script>
-    <script src="./ransomware_files/popper.min.js"></script> 
-    <script src="./ransomware_files/bootstrap.min.js"></script> 
+    <script src="../../assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/plugins/popper.min.js"></script> 
+    <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
     
     <!-- Page Specific JS -->
     <script src="./ransomware_files/highlight.min.js"></script>
@@ -352,11 +300,11 @@
     <script src="./ransomware_files/blog.js"></script>
     
     <!-- Dark Mode -->
-	<script src="./ransomware_files/js-cookie.min.js"></script>
-	<script src="./ransomware_files/dark-mode.js"></script>
+	<script src="../../assets/plugins/js-cookie.min.js"></script>
+	<script src="../../assets/js/dark-mode.js"></script>
     
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="./ransomware_files/style-switcher.js"></script>     
+    <script src="../../assets/js/style-switcher.js"></script>     
     
 
 
