@@ -24,75 +24,10 @@
     <!-- FontAwesome JS -->
     <script defer="" src="../../assets/fontawesome/js/all.js"></script>
 	
-	<!-- Plugin CSS -->
-	<link rel="stylesheet" href="./ransomware_files/monokai-sublime.css">
-	
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme-1.css">
-
-	<script data-dapp-detection="">
-		(function() {
-		  let alreadyInsertedMetaTag = false
-		
-		  function __insertDappDetected() {
-			if (!alreadyInsertedMetaTag) {
-			  const meta = document.createElement('meta')
-			  meta.name = 'dapp-detected'
-			  document.head.appendChild(meta)
-			  alreadyInsertedMetaTag = true
-			}
-		  }
-		
-		  if (window.hasOwnProperty('web3')) {
-			// Note a closure can't be used for this var because some sites like
-			// www.wnyc.org do a second script execution via eval for some reason.
-			window.__disableDappDetectionInsertion = true
-			// Likely oldWeb3 is undefined and it has a property only because
-			// we defined it. Some sites like wnyc.org are evaling all scripts
-			// that exist again, so this is protection against multiple calls.
-			if (window.web3 === undefined) {
-			  return
-			}
-			__insertDappDetected()
-		  } else {
-			var oldWeb3 = window.web3
-			Object.defineProperty(window, 'web3', {
-			  configurable: true,
-			  set: function (val) {
-				if (!window.__disableDappDetectionInsertion)
-				  __insertDappDetected()
-				oldWeb3 = val
-			  },
-			  get: function () {
-				if (!window.__disableDappDetectionInsertion)
-				  __insertDappDetected()
-				return oldWeb3
-			  }
-			})
-		  }
-		})()</script><script src="./ransomware_files/embed(1).js" data-timestamp="1593738889730"></script><script charset="utf-8" src="./ransomware_files/horizon_tweet.278dff0e94964f51fb3a8a312fe19019.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.5c5dad4ae74bbb3422efd01116dc45e6.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.6c1eae6bc9387c9331312cf9e26ec68e.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.7f8ed42388da812e66b571110fd74f8b.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js">
-</head> 
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme-1.css"></head> 
 
 <body>
-    <div id="player"></div>
-    <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '360',
-          width: '640',
-          videoId: 'suv_On3Q3Pg',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-	</script>
 	
     <header class="header text-center">	    
 		<div class="force-overflow">
@@ -252,12 +187,8 @@
 						and North Korea, Symantec explained that an earlier version of WannaCry was used in a small number of attacks three months before the global cyber attack.
 					</p>
 					<p>In response to this Pyongyang denied any relation to this massive computer attack that infected hundreds of thousands of computers in the world.</p>
-					<h4 class="mt-5 mb-3">Creating a Ransomware with Python</h4><br>
-				    <div class="embed-responsive embed-responsive-16by9">
-						<iframe id="player" type="text/html" width="640" height="360"
-						src="http://www.youtube.com/embed/suv_On3Q3Pg?enablejsapi=1&origin=http://example.com"
-						frameborder="0"></iframe>
-					</div>
+					<h4 class="mt-5 mb-3">Creating a Ransomware with Python</h4>
+					<p>In this <a href="https://www.youtube.com/watch?v=suv_On3Q3Pg" target="_blank">site</a> you can learn how to create a ramsonware with python</p> 
 			    </div>
 				
 		<footer class="footer text-center py-4">
@@ -305,9 +236,6 @@
     
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src="../../assets/js/style-switcher.js"></script>     
-    
 
-
- 
-
-<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./ransomware_files/widget_iframe.c4b33f07650267db9f8a72eaac551cac.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe style="display: none;" src="./ransomware_files/saved_resource(1).html"></iframe></body></html>
+</body>
+</html>
